@@ -1,5 +1,17 @@
 Prueba realizada: Se ejecutó el servidor con el comando "node server.js" en Codespaces.
-Resultado: La terminal mostró el mensaje "Servidor ejecutándose en puerto 3000".
-Verificación: Al abrir el puerto 3000 en Codespaces, la página respondió con el texto "Servidor funcionando correctamente - Semana 6".
-Conclusión: El servidor Express funciona de manera adecuada y responde correctamente a las solicitudes.
+Resultado: Al abrir http://localhost:3000/ se mostró el mensaje "Servidor funcionando correctamente - Semana 6".
+Verificación: Se envió una petición POST a la ruta /registro con el siguiente JSON:
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+Respuesta del servidor:
+{
+  "estado": "Usuario registrado",
+  "datos": {
+    "nombre": "Maria",
+    "mensaje": "Hola comunidad"
+  }
+}
+Conclusión: El servidor recibe los datos enviados en formato JSON y responde confirmando que fueron procesados correctamente.
 
